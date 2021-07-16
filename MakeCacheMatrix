@@ -6,20 +6,26 @@ set <- function (y) {
  }
  
  get <- function (x,...){
- setmean <- function (mean) n <<- mean
- getmean <- function ()n
+ setmeaninv <- function (inv) n <<- Inverse
+ getmeaninv <- function ()n
  list (set , get - get,
-       setmean - setmean,
-       getnean - getmean)
+       setmeaninv - setmeaninv,
+       getmeaninv - getmeaninv)
  }
- cachemean <- function (x,....){
- n <- x$getmean()
- if (!is.nu11(n)){
- message ("getting cached date")
- return (n)
+ cachemeansolve <- function (x,....){
+
+##return a matrix that is inverse of x
+
+ inv <- x$getInverse()
+ if (!is.null(inv)){
+ 
+## the statement will apply if the function of the inverse shown will turn out to be NULL 
+
+message ("getting cached date")
+ return (inv)
  }date <- x$get()
- n <- mean (data,...)
- x$setmean(n)
+ n <- inv (data,...)
+ x$setInverse(inv)
  n
  }
  
