@@ -1,0 +1,44 @@
+makeChachematrix <- function (x = matrix)){
+inv <- NULL
+set <- function (y) {
+ x <<- y 
+ inv <<- NULL
+ }
+ 
+ get <- function (x,...){
+ setmean <- function (mean) n <<- mean
+ getmean <- function ()n
+ list (set , get - get,
+       setmean - setmean,
+       getnean - getmean)
+ }
+ cachemean <- function (x,....){
+ n <- x$getmean()
+ if (!is.nu11(n)){
+ message ("getting cached date")
+ return (n)
+ }date <- x$get()
+ n <- mean (data,...)
+ x$setmean(n)
+ n
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ,
