@@ -21,6 +21,7 @@ set <- function (y) {
  
 ## the statement will apply if the function of the inverse shown will turn out to be NULL 
 
+
 message ("getting cached data")
  return (inv)
  }data <- x$get()
@@ -29,6 +30,7 @@ message ("getting cached data")
  n
  }
  
+
  
  
  
@@ -47,4 +49,3 @@ message ("getting cached data")
  
  
  
- ,
