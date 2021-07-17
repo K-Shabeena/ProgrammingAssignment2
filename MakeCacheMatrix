@@ -12,7 +12,7 @@ set <- function (y) {
        setmeaninv - setmeaninv,
        getmeaninv - getmeaninv)
  }
- cachemeansolve <- function (x,....){
+ cachesolve <- function (x,....){
 
 ##return a matrix that is inverse of x
 
@@ -21,9 +21,9 @@ set <- function (y) {
  
 ## the statement will apply if the function of the inverse shown will turn out to be NULL 
 
-message ("getting cached date")
+message ("getting cached data")
  return (inv)
- }date <- x$get()
+ }data <- x$get()
  n <- inv (data,...)
  x$setInverse(inv)
  n
