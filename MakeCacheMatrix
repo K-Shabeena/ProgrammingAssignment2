@@ -1,6 +1,8 @@
+#The function "makeCacheMatrix" is created to strat the function of the script. It creates the values of the numeric and solve the inverse
+
 makeChachematrix <- function (x = matrix)){
 inv <- NULL
-set <- function (y) {
+set <- function(y) {
  x <<- y 
  inv <<- NULL
  }
@@ -8,19 +10,22 @@ set <- function (y) {
  get <- function (x,...){
  setmeaninv <- function (inv) n <<- Inverse
  getmeaninv <- function ()n
- list (set , get - get,
-       setmeaninv - setmeaninv,
-       getmeaninv - getmeaninv)
+ list (set = set , get = get,
+       setinverse = setinverse,
+       getinverse = getinverse)
  }
- cachesolve <- function (x,....){
 
-##return a matrix that is inverse of x
+## Now making the code structure for the "cacheSolve" function.. 
+## The "cacheSolve" function uses to calculate the given "makeCacheMatrix" statement and inverse the numeric. 
+
+cachesolve <- function (x,....){
+
+##Return a matrix that is inverse of 'x'
 
  inv <- x$getInverse()
  if (!is.null(inv)){
  
-## the statement will apply if the function of the inverse shown will turn out to be NULL 
-
+## The statement will apply if the function of the inverse shown will turn out to be NULL 
 
 message ("getting cached data")
  return (inv)
@@ -29,10 +34,6 @@ message ("getting cached data")
  x$setInverse(inv)
  n
  }
- 
-
- 
- 
  
  
  
